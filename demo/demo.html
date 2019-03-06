@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+            <h1 id="title" class="title">Cybersoft</h1>
+            <button id="btn">button</button>
+    </div>
+    
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+    //gán sự kiện trong Jquery    
+        //cách 1:
+            // $('#btn').click(function(){
+            //     //anonymous function : hàm ẩn danh
+            //     alert('Cybersoft');
+            // })
+        //cách 2:
+            // function thongbao(){
+            //     alert('Cybersoft');
+            // }
+            // $('#btn').click(thongbao);
+    //khi click vào nút button,thì sẽ đổi màu h1
+        $('#btn').click(function(){
+            //cách 1:
+            // $('#title').css('color','red');
+            //cách 2:
+            //$('.title').css('color','blue');
+            //cách 3:
+            $('.wrapper .title').css('color','blue');
+        })
+    </script>
+</body>
+</html>
